@@ -1,0 +1,12 @@
+<div>
+    <!-- NOTE: comment in this code when you get to this point in the course -->
+    <app-card title="Collected" value={{cardData.totalPaidInvoices}} type="collected" color='bg-blue-200'></app-card>
+    <app-card title="Pending" value={{cardData.totalPendingInvoices}} type="pending" color='bg-red-200'></app-card>
+    <app-card title="Total Invoices" value={{cardData.numberOfInvoices}} type="invoices" color='bg-green-200'></app-card>
+    <app-card
+      title="Total Customers"
+      value={{cardData.numberOfCustomers}}
+      type="customers"
+      color='bg-yellow-200'
+    ></app-card>
+</div>

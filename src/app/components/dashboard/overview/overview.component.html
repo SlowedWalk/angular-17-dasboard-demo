@@ -1,0 +1,36 @@
+<main>
+  <h1 className="mb-4 text-xl md:text-4xl underline" >
+    Dashboard
+  </h1>
+  <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+    <!-- <Card title="Collected" value={totalPaidInvoices} type="collected" color='bg-blue-200'/>
+    <Card title="Pending" value={totalPendingInvoices} type="pending" color='bg-red-200'/>
+    <Card title="Total Invoices" value={numberOfInvoices} type="invoices" color='bg-green-200'/>
+    <Card
+      title="Total Customers"
+      value={numberOfCustomers}
+      type="customers"
+      color='bg-yellow-200'
+    /> -->
+    @defer {
+      <app-card-wrapper></app-card-wrapper>
+    } @placeholder (minimum 300ms) {
+      <div [innerHTML]="cardSkeleton"></div>
+    }
+
+  </div>
+  <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-4 lg:grid-cols-8">
+    @defer {
+      <app-revenue-chart></app-revenue-chart>
+    } @placeholder (minimum 300ms) {
+      <div [innerHTML]="revenueChartSkeleton"> </div>
+    }
+
+    @defer {
+      <app-latest-invoices></app-latest-invoices>
+    } @placeholder (minimum 500ms) {
+      <div [innerHTML]="latestInvoicesSkeleton"> </div>
+    }
+  </div>
+</main>
+

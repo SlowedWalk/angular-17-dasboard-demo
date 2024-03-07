@@ -1,6 +1,6 @@
 const shimmer = 'before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/60 before:to-transparent';
 
-export const cardSkeleton = `
+export const CardSkeleton = `
     <div class='${shimmer} relative overflow-hidden rounded-xl bg-gray-100 p-2 shadow-sm'>
       <div class="flex p-4">
         <div class="h-5 w-5 rounded-md bg-gray-200" />
@@ -12,16 +12,16 @@ export const cardSkeleton = `
     </div>
   `;
 
-export const cardsSkeleton = `
+export const CardsSkeleton = `
     <div>
-      ${cardSkeleton}
-      ${cardSkeleton}
-      ${cardSkeleton}
-      ${cardSkeleton}
+      ${CardSkeleton}
+      ${CardSkeleton}
+      ${CardSkeleton}
+      ${CardSkeleton}
     </div>
   `;
 
-export  const revenueChartSkeleton = `
+export  const RevenueChartSkeleton = `
     <div class='${shimmer} relative w-full overflow-hidden md:col-span-4'>
       <div class="mb-4 h-8 w-36 rounded-md bg-gray-100" />
       <div class="rounded-xl bg-gray-100 p-4">
@@ -34,7 +34,7 @@ export  const revenueChartSkeleton = `
     </div>
   `;
 
-export  const invoiceSkeleton = `
+export  const InvoiceSkeleton = `
     <div class="flex flex-row items-center justify-between border-b border-gray-100 py-4">
       <div class="flex items-center">
         <div class="mr-2 h-8 w-8 rounded-full bg-gray-200" />
@@ -47,16 +47,16 @@ export  const invoiceSkeleton = `
     </div>
   `;
 
-export  const latestInvoicesSkeleton = `
+export  const LatestInvoicesSkeleton = `
   <div class='${shimmer} relative flex w-full flex-col overflow-hidden md:col-span-4'>
   <div class="mb-4 h-8 w-36 rounded-md bg-gray-100" />
   <div class="flex grow flex-col justify-between rounded-xl bg-gray-100 p-4">
     <div class="bg-white px-6">
-    ${invoiceSkeleton}
-    ${invoiceSkeleton}
-    ${invoiceSkeleton}
-    ${invoiceSkeleton}
-    ${invoiceSkeleton}
+    ${InvoiceSkeleton}
+    ${InvoiceSkeleton}
+    ${InvoiceSkeleton}
+    ${InvoiceSkeleton}
+    ${InvoiceSkeleton}
       <div class="flex items-center pb-2 pt-6">
         <div class="h-5 w-5 rounded-full bg-gray-200" />
         <div class="ml-2 h-4 w-20 rounded-md bg-gray-200" />
@@ -66,7 +66,7 @@ export  const latestInvoicesSkeleton = `
 </div>
   `;
 
-export  const dashboardSkeleton = `
+export  const DashboardSkeleton = `
   <div>
     <div class='${shimmer} relative mb-4 h-8 w-36 overflow-hidden rounded-md bg-gray-100'/>
       <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -82,7 +82,7 @@ export  const dashboardSkeleton = `
   </div>
   `;
 
-export  const tableRowSkeleton = `
+export  const TableRowSkeleton = `
   <tr class="w-full border-b border-gray-100 last-of-type:border-none [&:first-child>td:first-child]:rounded-tl-lg [&:first-child>td:last-child]:rounded-tr-lg [&:last-child>td:first-child]:rounded-bl-lg [&:last-child>td:last-child]:rounded-br-lg">
   <!-- Customer Name and Image -->
   <td class="relative overflow-hidden whitespace-nowrap py-3 pl-6 pr-3">
@@ -117,7 +117,7 @@ export  const tableRowSkeleton = `
 </tr>
   `;
 
-export  const invoicesMobileSkeleton = `
+export  const InvoicesMobileSkeleton = `
   <div class="mb-2 w-full rounded-md bg-white p-4">
     <div class="flex items-center justify-between border-b border-gray-100 pb-8">
       <div class="flex items-center">
@@ -139,17 +139,17 @@ export  const invoicesMobileSkeleton = `
   </div>
   `;
 
-export const invoicesTableSkeleton = `
+export const InvoicesTableSkeleton = `
   <div class="mt-6 flow-root">
   <div class="inline-block min-w-full align-middle">
     <div class="rounded-lg bg-gray-50 p-2 md:pt-0">
       <div class="md:hidden">
-        ${invoicesMobileSkeleton}
-        ${invoicesMobileSkeleton}
-        ${invoicesMobileSkeleton}
-        ${invoicesMobileSkeleton}
-        ${invoicesMobileSkeleton}
-        ${invoicesMobileSkeleton}
+        ${InvoicesMobileSkeleton}
+        ${InvoicesMobileSkeleton}
+        ${InvoicesMobileSkeleton}
+        ${InvoicesMobileSkeleton}
+        ${InvoicesMobileSkeleton}
+        ${InvoicesMobileSkeleton}
       </div>
       <table class="hidden min-w-full text-gray-900 md:table">
         <thead class="rounded-lg text-left text-sm font-normal">
@@ -178,12 +178,12 @@ export const invoicesTableSkeleton = `
           </tr>
         </thead>
         <tbody class="bg-white">
-          ${tableRowSkeleton}
-          ${tableRowSkeleton}
-          ${tableRowSkeleton}
-          ${tableRowSkeleton}
-          ${tableRowSkeleton}
-          ${tableRowSkeleton}
+          ${TableRowSkeleton}
+          ${TableRowSkeleton}
+          ${TableRowSkeleton}
+          ${TableRowSkeleton}
+          ${TableRowSkeleton}
+          ${TableRowSkeleton}
         </tbody>
       </table>
     </div>

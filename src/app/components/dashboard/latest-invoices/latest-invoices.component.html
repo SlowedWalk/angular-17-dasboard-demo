@@ -6,15 +6,11 @@
     <!-- NOTE: comment in this code when you get to this point in the course -->
 
     <div class="bg-white px-6">
-      @for (latestInvoice in lalatestInvoices; index as i) {
-        <div
-            [ngClass]="i !== 0
-              ? 'flex flex-row items-center justify-between py-4'
-              : 'flex flex-row items-center justify-between py-4 border-t'
-          >
+      @for (latestInvoice of latestInvoices; track latestInvoice.id) {
+        <div [ngClass]="latestInvoice.id !== null ? 'flex flex-row items-center justify-between py-4' : 'flex flex-row items-center justify-between py-4 border-t'">
             <div class="flex items-center">
-              <Image
-                src={{invoice.image_url}}
+              <img
+                src={{latestInvoice.image_url}}
                 alt="profile picture"
                 class="mr-4 rounded-full"
                 width="32"
@@ -22,20 +18,20 @@
               />
               <div class="min-w-0">
                 <p class="truncate text-sm font-semibold md:text-base">
-                  {{invoice.name}}
+                  {{latestInvoice.name}}
                 </p>
                 <p class="hidden text-sm text-gray-500 sm:block">
-                  {{invoice.email}}
+                  {{latestInvoice.email}}
                 </p>
               </div>
             </div>
-            <p class="${lusitana.class} truncate text-sm font-medium md:text-base">
-              {{invoice.amount}}
+            <p class="truncate text-sm font-medium md:text-base" style="font-family: Lusitina;">
+              {{latestInvoice.amount}}
             </p>
           </div>
-      }
+        }
+        </div>
 
-    </div>
     <div class="flex items-center pb-2 pt-6">
       <ng-icon [svg]="ArrowPathIcon" class="h-5 w-5 text-gray-500"></ng-icon>
       <!-- <ArrowPathIcon class="h-5 w-5 text-gray-500" /> -->

@@ -1,10 +1,14 @@
 <div class="rounded-xl {{color}} p-2 shadow-sm">
   <div class="flex p-4">
-    {Icon ? <Icon class="h-5 w-5 text-gray-700" /> : null}
-    <h3 class="ml-2 text-sm font-medium">{title}</h3>
+    @if (Icon) {
+      <ng-icon [svg]="Icon" class="h-5 w-5 text-gray-700" />
+    } @else {
+      null
+    }
+    <h3 class="ml-2 text-sm font-medium">{{title}}</h3>
   </div>
   <p class="${lusitana.class} truncate rounded-xl bg-white px-4 py-8 text-center text-2xl"
   >
-    {value}
+    {{value}}
   </p>
 </div>

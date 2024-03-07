@@ -32,7 +32,7 @@ export interface Revenue {
 };
 
 export interface LatestInvoice {
-  id: string;
+  id: string | undefined;
   name: string;
   image_url: string;
   email: string;

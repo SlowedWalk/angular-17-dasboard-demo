@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { NgIcon } from '@ng-icons/core';
 import { heroArrowRight } from '@ng-icons/heroicons/outline';
-import { AcmeLogoComponent } from '../acme-logo/acme-logo.component';
 import { NgOptimizedImage } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { AcmeLogoComponent } from '../../components/acme-logo/acme-logo.component';
 
 @Component({
   selector: 'app-landing-page',

@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { NgIcon } from '@ng-icons/core';
-import { ButtonComponent } from '../../shared/button/button.component';
+import { ButtonComponent } from '../../../shared/button/button.component';
 import { heroArrowRight } from '@ng-icons/heroicons/outline';
 
 @Component({

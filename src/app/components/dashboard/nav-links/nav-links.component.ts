@@ -16,12 +16,14 @@ export class NavLinksComponent {
   pathname!: string;
 
   constructor(private _router: Router) {
-    _router.events.forEach((event) => {
-      this.pathname = _router.url
-    });
+
   }
 
   ngOnInit(): void {
+    this._router.events.forEach((event) => {
+      this.pathname = this._router.url
+    });
+
     this.links = [
       {
         name: 'Home',

@@ -3,7 +3,7 @@ import { ChangeDetectionStrategy, Component, Input, Signal } from '@angular/core
 import { FormBuilder, Validators } from '@angular/forms';
 import { NgIcon } from '@ng-icons/core';
 import { heroMagnifyingGlass } from '@ng-icons/heroicons/outline';
-import { debounce, debounceTime, tap } from 'rxjs';
+import { debounceTime, tap } from 'rxjs';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { AppService } from '../../services/app.service';
 
